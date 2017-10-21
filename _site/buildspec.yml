@@ -9,4 +9,4 @@ phases:
       - echo "**** Building Jekyll website ****"
       - jekyll build
       - echo "**** Deploying to AWS S3 ****"
-      - aws s3 sync _site/ s3://elizabethschindler.com --region us-east-1 --delete
+      - aws s3 sync _site/ s3://escouture.ca --region us-east-1 --delete
