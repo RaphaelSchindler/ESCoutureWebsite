@@ -75,6 +75,10 @@ body > main { position: relative; }
 .tab-row * {
   margin: 0; }
 
+.tab-row a {
+  position: relative; } /* Prevents a tab's outset shadow from obscuring the
+                           anchor. */
+
 
 /* Background */
 
