@@ -6,13 +6,14 @@ body {
   box-sizing: border-box;
   margin: 24px auto; }
 
-body > main   { margin: 0; padding: 24px; }
-body > footer { padding: 18px 18px 18px 18px; }
+body > main {
+  padding: 24px; }
 
-body > main { position: relative; }
+body > footer {
+  padding: 18px 18px 18px 18px; }
 
-/* .selected-tab { display: inline-block; z-index: 2; background-color: white; box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.05), 0 0 4px 0 rgba(0, 0, 0, 0.25); } */
-
+body > main {
+  position: relative; } /* Allows z-index (on descendants) to have an effect. */
 
 /* The 'root' tabs */
 
@@ -90,6 +91,13 @@ body > main { position: relative; }
 
 .darker-background { background-color: #F7F7F7; }
 
+
+/* Images */
+
+img.full-width {
+  width: calc(100% + 48px);
+  margin-left: -24px; margin-right: -24px; }
+
 /* Colour */
 
 html {
@@ -148,28 +156,21 @@ iframe[special-map] { margin-left: -25px; margin-right: -24px; }
 [without-vertical-margins] { margin-top: 0; margin-bottom: 0; }
 [horizontally-centered] { margin-left: auto; margin-right: auto; }
 
+hr {
+  border: 0; border-bottom: 1px solid #AFAFAF; }
 
 p {
   line-height: 24px;
   font-size: 16px; }
-  p .sc {
-    font-size: 14px;
-    text-transform: uppercase; }
 
 td {
   line-height: 24px;
   font-size: 16px; }
-  td .sc {
-    font-size: 14px;
-    text-transform: uppercase; }
 
 li {
   line-height: 24px;
   font-size: 16px;
   margin: 0; }
-  li .sc {
-    font-size: 14px;
-    text-transform: uppercase; }
 
 body > header {
   text-align: center;

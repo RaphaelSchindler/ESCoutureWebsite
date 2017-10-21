@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![](/assets/feature-image.jpg){: style="width: 100%;" }
+![](/assets/feature-image.jpg){:.full-width}
 
 The House of Gerry Weber in Burlington. Providing smart-casual, casual, and
 cruise attire to our distinguished and discriminating clientelle.
