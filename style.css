@@ -146,8 +146,20 @@ body > footer p { line-height: 18px; font-size: 12px; margin: 18px 0 0 0; }
 body { line-height: 0; font-size: 0; }
 html { -webkit-text-size-adjust: 100%; /* What is this for?---I forgot. */ }
 
-[gallery] { margin-left: -24px; margin-right: -24px; text-align: center; }
-[gallery] [thumbnail] { display: inline-block; width: 92px; opacity: 0.8; margin: 4px; }
+/* The gallery */
+
+[gallery] {
+  min-height: 810px;
+  margin-left: -24px; margin-right: -24px;
+  text-align: center; }
+
+[gallery] [thumbnail] {
+  display: inline-block;
+  width: 92px;
+  opacity: 0.8;
+  margin: 4px; }
+
+
 
 iframe[special-map] { margin-left: -25px; margin-right: -24px; }
 [center-aligned] { text-align: center; }
