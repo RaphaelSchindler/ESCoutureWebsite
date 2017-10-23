@@ -70,7 +70,6 @@ body > main {
   background-clip: padding-box;
   border-width: 32px;
   margin: -32px;
-  border-image-outset: 32;
   border-image: url(/assets/shadows-outset.png) 32; }
 
 .tab-row * {
@@ -110,14 +109,6 @@ body > main {
   background-color: white;
   border-left: 1px solid #AFAFAF; border-right: 1px solid #AFAFAF; }
 
-.tab-row .raised {
-  box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.5); }
-
-.tab-row .lowered {
-  box-shadow: inset 0 0 32px 0px rgba(0, 0, 0, 0.1), inset 0 0 4px 0 rgba(0, 0, 0, 0.5); }
-
-// body > header { background: center / 64px url("/assets/damask-pattern-a.png"); box-shadow: inset 0 0 32px 0px rgba(0, 0, 0, 0.05), inset 0 0 4px 0 rgba(0, 0, 0, 0.25); }
-// body > footer { background: center / 64px url("/assets/damask-pattern-a.png"); box-shadow: inset 0 0 32px 0px rgba(0, 0, 0, 0.05), inset 0 0 4px 0 rgba(0, 0, 0, 0.25); }
 a { color: #b73621; }
 
 /* Typography */
