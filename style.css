@@ -53,6 +53,11 @@ body > footer {
 
 /* The 'main' tabs */
 
+.tab-row {
+  padding-top: 32px;
+  margin-top: -32px;
+  overflow: hidden; }
+
 .tab-row .tab {
   position: relative;
   display: inline-block;
