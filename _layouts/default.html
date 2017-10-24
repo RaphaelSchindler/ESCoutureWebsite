@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% include title.html %}
     <title>Elizabeth Schindler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
@@ -11,142 +12,40 @@
     <script type="text/javascript" src="/gsap--tween-lite.js"></script> <!-- TODO: Move this to be within `gallery.js`. -->
     <script type="text/javascript" src="/gsap--css-plugin.js"></script> <!-- TODO: Move this to be within `gallery.js`. -->
     <script type="text/javascript" src="/gallery.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
-    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' />
   </head>
 
   <body>
-    <header class="recessed darker-background">
-
-    <!-- The 'root' tabs and logo -->
-    <!-- These tabs correspond to which 'store' is being viewed. -->
-
-{% if page.url contains "/escouture/" %}
+    <div class="excavation">
+    <header>
 
       <!-- The 'root' tabs -->
-      <div class="tab-row-0">
-        <div class="tab">
-          <p>Elizabeth Schindler</p>
-        </div>
-        <div class="recessed-tab-left">
-          <p><a href="/gwtoronto/index.html">Gerry Weber Toronto</a></p>
-        </div>
-        <div class="recessed-tab-right">
-          <p><a href="/gwburlington/index.html">Gerry Weber Burlington</a></p>
-        </div>
-      </div>
+      {% include root-tab-row.html %}
 
       <!-- The logo -->
-      <img src="/assets/escouture.svg" alt="Elizabeth Schindler Couture" style=
-       "width: 75%;">
-
-{% elsif page.url contains "/gwtoronto/" %}
-
-      <!-- The 'root' tabs -->
-      <div class="tab-row-0">
-        <div class="recessed-tab-all">
-          <p><a href="/escouture/index.html">Elizabeth Schindler</a></p>
-        </div>
-        <div class="tab">
-          <p>Gerry Weber Toronto</p>
-        </div>
-        <div class="recessed-tab-all">
-          <p><a href="/gwburlington/index.html">Gerry Weber Burlington</a></p>
-        </div>
-      </div>
-
-      <!-- the logo -->
-      <img src="/assets/gwtoronto.svg" alt="Gerry Weber Toronto" style="width:
-        75%;">
-
-{% elsif page.url contains "/gwburlington/" %}
-
-      <!-- The 'root' tabs -->
-      <div class="tab-row-0">
-        <div class="recessed-tab-left">
-          <p><a href="/escouture/index.html">Elizabeth Schindler</a></p>
-        </div>
-        <div class="recessed-tab-right">
-          <p><a href="/gwtoronto/index.html">Gerry Weber Toronto</a></p>
-        </div>
-        <div class="tab">
-          <p>Gerry Weber Burlington</p>
-        </div>
-      </div>
-
-      <!-- The logo -->
-      <img src="/assets/gwburlington.svg" alt="Gerry Weber Burlington" style=
-        "width: 75%;">
-
-{% endif %}
+      {% include logo.html %}
 
       <!-- The tabs for the main navigation -->
-
       <div class="tab-row">
-
-{% if page.url == "/escouture/" or page.url == "/gwtoronto/" or page.url == "/gwburlington/"%}
-        <div class="tab raised">
-          <p>Home</p>
-        </div>
-{% else %}
-        <div class="tab">
-          <p><a href="index.html">Home</a></p>
-        </div>
-{% endif %}
-      
-{% if page.url contains "/collections.html" %}
-        <div class="tab raised">
-          <p>Collections</p>
-        </div>
-{% else %}
-        <div class="tab">
-          <p><a href="collections.html">Collections</a></p>
-        </div>
-{% endif %}
-      
-{% if page.url contains "/location.html" %}
-        <div class="tab raised">
-          <p>Location</p>
-        </div>
-{% else %}
-        <div class="tab">
-          <p><a href="location.html">Location</a></p>
-        </div>
-{% endif %}
-      
-{% if page.url contains "/hours.html" %}
-        <div class="tab raised">
-          <p>Hours</p>
-        </div>
-{% else %}
-        <div class="tab">
-          <p><a href="hours.html">Hours</a></p>
-        </div>
-{% endif %}
-      
-{% if page.url contains "/contact.html" %}
-        <div class="tab raised">
-          <p>Contact</p>
-        </div>
-{% else %}
-        <div class="tab">
-          <p><a href="contact.html">Contact</a></p>
-        </div>
-{% endif %}
-
+        {% include tab.html name="Home" %}
+        {% include tab.html name="Collections" %}
+        {% include tab.html name="Location" %}
+        {% include tab.html name="Hours" %}
+        {% include tab.html name="Contact" %}
       </div>
+
     </header>
 
-    <main>
+    <div class="content">
       {{ content }}
-    </main>
+    </div>
 
-    <footer class="recessed darker-background">
+    <footer>
       <p without-top-margin>
         &copy; Elizabeth Schindler Couture, Inc.<br>
         Site by <a href="http://radicle.io" target="_blank">Radicle Inc.</a>
         Site feedback is welcomed; please email <a href="mailto:raphael@radicle.io">raphael@radicle.io</a>.
       </p>
     </footer>
+    </div>
   </body>
 </html>
