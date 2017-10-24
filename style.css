@@ -12,9 +12,6 @@ body > main {
 body > footer {
   padding: 18px 18px 18px 18px; }
 
-body > main {
-  position: relative; } /* Allows z-index (on descendants) to have an effect. */
-
 /* The 'root' tabs */
 
 .tab-row-0 {
@@ -59,7 +56,8 @@ body > main {
 .tab-row .tab {
   position: relative;
   display: inline-block;
-  padding-left: 8px; padding-right: 8px; }
+  padding-left: 8px; padding-right: 8px;
+  z-index: 0; } /* For overlap */
 
 .tab-row .raised{
   background-color: white;
@@ -103,7 +101,8 @@ body {
 
 body > main {
   background-color: white;
-  border-left: 1px solid #AFAFAF; border-right: 1px solid #AFAFAF; }
+  border-left: 1px solid #AFAFAF; border-right: 1px solid #AFAFAF;
+  position: relative; z-index: 1; } /* For overlap */
 
 a { color: #b73621; }
 
