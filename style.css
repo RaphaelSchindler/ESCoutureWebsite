@@ -56,37 +56,33 @@ body > main {
 
 /* The 'main' tabs */
 
-.tab-row {
-  margin-left: 32px; margin-right: 32px; }
-
 .tab-row .tab {
+  position: relative;
   display: inline-block;
   padding-left: 8px; padding-right: 8px; }
 
-.tab-row .raised-tab {
-  display: inline-block;
-  padding-left: 8px; padding-right: 8px;
+.tab-row .raised{
   background-color: white;
-  background-clip: padding-box;
-  border-width: 32px;
-  margin: -32px;
-  border-image: url(/assets/shadows-outset.png) 32; }
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 1px 4px 2px rgba(0, 0, 0, 0.2); }
 
 .tab-row * {
   margin: 0; }
 
-.tab-row a {
-  position: relative; } /* Prevents a tab's outset shadow from obscuring the
+/*.tab-row a {
+  position: relative; }*/ /* Prevents a tab's outset shadow from obscuring the
                            anchor. */
 
 
 /* Background */
 
 .recessed {
-  background: url(/assets/shadow-top.png) top repeat-x,
+  box-shadow: inset 0 8px 32px rgba(0, 0, 0, 0.5),
+              inset 0 1px 4px 2px rgba(0, 0, 0, 0.2); }
+
+/*  background: url(/assets/shadow-top.png) top repeat-x,
               url(/assets/shadow-right.png) right repeat-y,
               url(/assets/shadow-bottom.png) bottom repeat-x,
-              url(/assets/shadow-left.png) left repeat-y transparent; }
+              url(/assets/shadow-left.png) left repeat-y transparent; } */
 
 .darker-background { background-color: #F7F7F7; }
 
