@@ -30,7 +30,7 @@ body footer {
 .root-tab-row .tab {
   display: table-cell;
   text-align: center;
-  padding: 8px 0 8px 0; }
+  padding: 4px 0 4px 0; }
 
 .root-tab-row .recessed-tab-left {
   display: table-cell;
@@ -64,12 +64,12 @@ body footer {
 .tab-row {
   padding-top: 32px;
   margin-top: -32px;
-  margin-left: -32px; margin-right: -32px;
+  margin-left: -12px; margin-right: -12px;
   overflow: hidden; }
 
 .tab-row .tab {
   display: inline-block;
-  padding-left: 8px; padding-right: 8px; }
+  padding: 0 4px 0 4px; }
 
 .tab-row .raised{
   background-color: white;
