@@ -1,17 +1,19 @@
-/* Layout */
+/** Layout **/
 
 body {
   min-width: 240px; max-width: 542px;
-  margin: 24px auto;
+  margin: 0 auto;
   box-sizing: border-box; }
 
 .excavation {
+  margin: 0 24px;
   background: url(/assets/shadow-top.png) top repeat-x,
               url(/assets/shadow-right.png) right repeat-y,
               url(/assets/shadow-bottom.png) bottom repeat-x,
               url(/assets/shadow-left.png) left repeat-y #F7F7F7; }
 
 .content {
+  margin: 0 -24px;
   padding: 1px 0;
   background-color: white;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.5), 0 0 4px 2px rgba(0, 0, 0, 0.2); }
@@ -19,7 +21,7 @@ body {
 body footer {
   padding: 18px 18px 18px 18px; }
 
-/* The 'root' tabs */
+/** The root-level tabs **/
 
 .root-tab-row {
   display: table;
@@ -57,8 +59,7 @@ body footer {
 .root-tab-row * {
   margin: 0; }
 
-
-/* The 'main' tabs */
+/** The main tabs **/
 
 .tab-row {
   padding-top: 32px;
@@ -71,27 +72,49 @@ body footer {
 
 .tab-row .raised{
   background-color: white;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 1px 4px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.4), 0 0 4px 2px rgba(0, 0, 0, 0.15); }
 
 .tab-row * {
   margin: 0; }
 
-/* Background */
+/** The hours table **/
 
-.recessed {
-  background: url(/assets/shadow-top.png) top repeat-x,
-              url(/assets/shadow-right.png) right repeat-y,
-              url(/assets/shadow-bottom.png) bottom repeat-x,
-              url(/assets/shadow-left.png) left repeat-y transparent; }
+.hours-table-container {
+  padding: 24px 20px 0 20px; }
 
+.hours-table {
+  display: table;
+  width: 100%;
+  border-spacing: 4px;
+  table-layout: fixed; }
 
+.hours-table .row {
+  display: table-row; }
 
-/* Images */
+.hours-table .row .hours {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 120px;
+  line-height: 24px;
+  font-size: 18px; }
+
+.hours-table .row .weekend {
+  background-color: rgba(0, 0, 0, 0.09); }
+
+.hours-table .row .weekday {
+  background-color: rgba(0, 0, 0, 0.04); }
+
+.hours-table .row .day {
+  display: table-cell;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px; }
+
+/** --- **/
 
 img.full-width {
   width: 100%; }
-
-/* Colour */
 
 html {
   background-color: white; }
@@ -101,18 +124,28 @@ body {
 
 a { color: #b73621; }
 
-/* Typography */
+/** Typography **/
 
 body { font-family: sans-serif; }
+
+p {
+  line-height: 24px;
+  font-size: 16px;
+  margin: 18px 24px; }
+
+h2 {
+  line-height: 24px;
+  font-size: 22px;
+  margin: 72px auto 30px auto; }
+  
+
 
 p, td, blockquote, ol, ul, li, h1, h2, h3 { line-height: 24px; }
 p, td, blockquote, ol, ul, li, h3 { font-size: 16px; }
 h1 { font-size: 21px; }
 h2 { font-size: 16px; text-transform: uppercase; text-align: center; }
 h3 { font-weight: bold; }
-p, blockquote, ol, ul, h3 { margin: 24px 0; }
 h1 { margin: 120px 0 48px 0; }
-h2 { margin: 24px 0; }
 h3 { margin: 24px 0 -24px 0; }
 
 em, i { font-style: italic; }
@@ -122,12 +155,12 @@ a { text-decoration: none; }
 p { line-height: 24px; font-size: 16px; }
 body footer p { line-height: 18px; font-size: 12px; margin: 18px 0 0 0; }
 
-/* Misc */
+/** Misc **/
 
 body { line-height: 0; font-size: 0; }
 html { -webkit-text-size-adjust: 100%; /* What is this for?---I forgot. */ }
 
-/* The gallery */
+/** The gallery **/
 
 [gallery] {
   min-height: 810px;
@@ -151,10 +184,6 @@ iframe[special-map] { margin-left: -25px; margin-right: -24px; }
 
 hr {
   border: 0; border-bottom: 1px solid #AFAFAF; }
-
-p {
-  line-height: 24px;
-  font-size: 16px; }
 
 td {
   line-height: 24px;
