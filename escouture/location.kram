@@ -7,4 +7,5 @@ layout: default
 1987 Leslie St, Toronto ON &nbsp;M3B 2M3
 {: style="text-align: center;" }
 
-![](/assets/map.svg){:style="width=100%"}
+![](/assets/map.svg)
+{:class="full-width"}

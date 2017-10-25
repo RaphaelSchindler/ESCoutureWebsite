@@ -64,6 +64,7 @@ body footer {
 .tab-row {
   padding-top: 32px;
   margin-top: -32px;
+  margin-left: -32px; margin-right: -32px;
   overflow: hidden; }
 
 .tab-row .tab {
@@ -115,6 +116,10 @@ body footer {
 
 img.full-width {
   width: 100%; }
+
+p.full-width {
+  padding-left: 0; padding-right: 0;
+  margin-left: 0; margin-right: 0; }
 
 html {
   background-color: white; }
