@@ -2,7 +2,9 @@
 layout: default
 ---
 
-![](/assets/feature-image.jpg){:.full-width}
+<div style="margin-top:-1px;">
+  <img class="full-width" src="/assets/feature-image.jpg">
+</div>
 
 The first official House of Gerry Weber in Toronto. Providing smart-casual,
 casual, and cruise attire to our distinuished and discriminating clientelle
