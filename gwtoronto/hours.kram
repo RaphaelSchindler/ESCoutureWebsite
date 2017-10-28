@@ -5,7 +5,7 @@ layout: default
 <div class="hours-table-container" style="padding: 24px 22px 0 22px;">
   <div class="hours-table">
     <div class="row">
-      <div class="hours weekend">Closed</div>
+      <div class="hours weekend">&mdash;</div>
       <div class="hours weekday">11&ndash;6</div>
       <div class="hours weekday">10&ndash;6</div>
       <div class="hours weekday">10&ndash;6</div>
