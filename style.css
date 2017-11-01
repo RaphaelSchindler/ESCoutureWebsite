@@ -6,14 +6,12 @@ body {
   box-sizing: border-box; }
 
 .excavation {
-  margin: 0 24px;
   background: url(/assets/shadow-top.png) top repeat-x,
               url(/assets/shadow-right.png) right repeat-y,
               url(/assets/shadow-bottom.png) bottom repeat-x,
               url(/assets/shadow-left.png) left repeat-y #F7F7F7; }
 
 .content {
-  margin: 0 -24px;
   padding: 1px 0;
   background-color: white;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.5), 0 0 4px 2px rgba(0, 0, 0, 0.2); }
